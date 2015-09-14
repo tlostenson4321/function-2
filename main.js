@@ -6,4 +6,14 @@ var getName = function(arg1) {
 	return person.name
 
 }
-console.log(getName())
+// console.log(getName())
+
+var totalLetters = function() {
+	console.log(arguments)
+	for ( i =0; i < arguments.length; i++){
+		console.log(arguments.length)
+	}
+
+}
+console.log(totalLetters(['javascript', 'is', 'awesome']))
+
