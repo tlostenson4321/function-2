@@ -41,5 +41,10 @@ var removeM = function(string) {
 	}
 	return array.join("")
 }
-console.log(removeM('mommy'))
-console.log(removeM('money'))
+// console.log(removeM('mommy'))
+// console.log(removeM('money'))
+
+var printObject = function(obj){
+	return obj.toString
+}
+console.log(printObject({a: 10}))
