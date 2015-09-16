@@ -44,14 +44,35 @@ var removeM = function(string) {
 // console.log(removeM('mommy'))
 // console.log(removeM('money'))
 
-var printObject = function(obj){
-	return obj.toString
-}
-// console.log(printObject({a: 10}))
+// var printObject = function(obj){
+// 	return obj.toString
+// }
+// // console.log(printObject({a: 10}))
+// This is so wrong but not sure how to do it.
+
+// var vowels = function(str) {
+// 	var arr = [ ]
+// 	for ( i= 0; i < str.length; i++) {
+// 		if (str.length[i] === 'a' || 'e' || 'i' || 'o' || 'u'){
+// 			arr.push(str[i])
+// 		}
+// 		else {
+
+// 		}
+// 	}
+// 	return arr
+// }
 
 var vowels = function(str) {
-	for ( i= 0; i < str.length; i++) {
-		if 
+	var arr = str.split("")
+	for ( i= 0; i < arr.length; i++) {
+		if (arr[i] === 'a' || 'e' || 'i' || 'o' || 'u'){
+			var array = []
+			array.push(arr[i])
+		}
+		
 	}
+	return array
 }
 
+console.log(vowels('alabama'))
