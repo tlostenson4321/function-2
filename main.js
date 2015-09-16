@@ -63,16 +63,34 @@ var removeM = function(string) {
 // 	return arr
 // }
 
-var vowels = function(str) {
-	var arr = str.split("")
-	for ( i= 0; i < arr.length; i++) {
-		if (arr[i] === 'a' || 'e' || 'i' || 'o' || 'u'){
-			var array = []
-			array.push(arr[i])
-		}
-		
-	}
-	return array
-}
 
+// This just pulls the last part of the array. so no
+// var vowels = function(str) {
+// 	var arr = str.split("")
+// 	for (var i= 0; i < arr.length; i++) {
+// 		if (arr[i] === 'a' || 'e' || 'i' || 'o' || 'u'){
+// 			var array = []
+// 			array.push(arr[i])
+// 		}
+		
+// 	}
+// 	return array
+// }
+
+// console.log(vowels('alabama'))
+// console.log(vowels('What evil odd ducks!'))
+
+var vowels = function(string) {
+	var arr = [ ]
+	for (var i = 0; i < string.length; i++ ){
+		if (string.charAt(i) === 'a' || 'e' || 'i' || 'o' || 'u') {
+			arr.push(string.charAt(i))
+		}
+
+	}
+	return arr
+}
 console.log(vowels('alabama'))
+console.log(vowels('What evil odd ducks!'))
+
+// This is pulling the whole string not just the single characters.
