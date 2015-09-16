@@ -47,4 +47,11 @@ var removeM = function(string) {
 var printObject = function(obj){
 	return obj.toString
 }
-console.log(printObject({a: 10}))
+// console.log(printObject({a: 10}))
+
+var vowels = function(str) {
+	for ( i= 0; i < str.length; i++) {
+		if 
+	}
+}
+
