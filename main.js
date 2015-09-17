@@ -56,9 +56,7 @@ var removeM = function(string) {
 // 		if (str.length[i] === 'a' || 'e' || 'i' || 'o' || 'u'){
 // 			arr.push(str[i])
 // 		}
-// 		else {
-
-// 		}
+// 		
 // 	}
 // 	return arr
 // }
@@ -80,17 +78,32 @@ var removeM = function(string) {
 // console.log(vowels('alabama'))
 // console.log(vowels('What evil odd ducks!'))
 
-var vowels = function(string) {
-	var arr = [ ]
-	for (var i = 0; i < string.length; i++ ){
-		if (string.charAt(i) === 'a' || 'e' || 'i' || 'o' || 'u') {
-			arr.push(string.charAt(i))
-		}
+// var vowels = function(string) {
+// 	var arr = [ ]
+// 	for (var i = 0; i < string.length; i++ ){
+// 		if (string.charAt(i) === 'a' || 'e' || 'i' || 'o' || 'u') {
+// 			arr.push(string.charAt(i))
+// 		}
 
+// 	}
+// 	return arr
+// }
+// console.log(vowels('alabama'))
+// console.log(vowels('What evil odd ducks!'))
+
+// This is pulling the whole string not just the single characters. Maybe it needs to be split. 
+
+var or = function(arr) {
+	for ( var i = 0; i < arr.length; i++)
+	if (arr[i] === 'true') {
+		return ('true')
 	}
-	return arr
+	else {
+		return ('false')
+	}
 }
-console.log(vowels('alabama'))
-console.log(vowels('What evil odd ducks!'))
+console.log(or([false, false, true, false]))
 
-// This is pulling the whole string not just the single characters.
+
+
+
